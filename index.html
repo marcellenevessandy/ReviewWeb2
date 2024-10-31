@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/img/logotipoDenteBranco.png" type="image/x-icon">
+    <script src="./scripts/script.js"></script>
+    <title>Sorriso Perfeito</title>
+</head>
+
+<body>
+
+    <!-- Home (Introdução sobre o consultório e um destaque sobre os
+    serviços)
+     Serviços (Lista dos serviços dentários oferecidos)
+     Galeria de Sorrisos (Imagens de pacientes satisfeitos, com
+    permissão de uso)
+     Depoimentos (Comentário de 2 a 3 pacientes fictícios)
+     Contato (Formulário para o visitante preencher, com nome, e-
+    mail e mensagem)
+    
+    o Footer: Informações de contato, links para redes sociais, e direitos
+    autorais. -->
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logotipoDenteBranco.png" alt="logo sorriso perfeito"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#slide" class="nav-link"></a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#galeriaFotos" class="nav-link">Galeria de Fotos</a></li>
+                    <li class="nav-item"><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="#contato"><button>Contato</button></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/img/menu.png" alt="logo menu"></button>
+            </div>
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#slide" class="nav-link"></a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#galeriaFotos" class="nav-link">Galeria de Fotos</a></li>
+                <li class="nav-item"><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <a href="#contato"><button>Contato</button></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="slider" id="slide">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="./assets/img/card.d1.png" alt="slide 1">
+                    <img class="img-mobile" src="./assets/img/card.m1.png" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="./assets/img/card.d2.png" alt="slide 3">
+                    <img class="img-mobile" src="./assets/img/card.m2.png" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="./assets/img/card.d3.png" alt="slide 3">
+                    <img class="img-mobile" src="./assets/img/card.m3.png" alt="slide 3">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+
+            <h1>Quem Somos Nós?</h1>
+            <p>A Sorriso Perfeito foi fundada em 2014 com o objetivo de oferecer cuidados dentários de excelência à
+                nossa comunidade. Desde o início, nossa missão tem sido promover a saúde bucal através de um atendimento
+                humanizado e tecnologias de ponta. Nossa equipe é composta por profissionais altamente qualificados,
+                dedicados a proporcionar um ambiente acolhedor e seguro para todos os nossos pacientes.</p>
+            <p>Estamos comprometidos em educar nossos pacientes sobre a importância da saúde bucal e em oferecer
+                tratamentos personalizados que atendam às necessidades individuais de cada um. Ao longo dos anos,
+                investimos continuamente em inovação e atualização, garantindo que nossos serviços sejam sempre de alta
+                qualidade e eficiência. Venha conhecer a Sorriso Perfeito e descubra como podemos ajudar você a alcançar
+                um sorriso saudável e radiante!</p>
+
+
+
+        </section>
+</body>
+
+</html>
