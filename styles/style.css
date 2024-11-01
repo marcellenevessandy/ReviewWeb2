@@ -12,6 +12,7 @@
     --cor-botao-hover: #A9D6E5;
     --cor-cinza: #C1BDB8;
     --cor-cinza2: #d1cfcd;
+    --cor-verde: #90BE6D;
 }
 
 /* o Aplique uma paleta de cores suave e clean, ideal para consultórios:
@@ -19,7 +20,7 @@
 (#F3F4F6), e verde suave (#90BE6D).
 
 o O estilo deve transmitir limpeza, cuidado e modernidade. */
-
+/* 
 * {
     padding: 0;
     margin: 0;
@@ -54,7 +55,7 @@ header {
     background-color: var(--cor-menu);
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    padding: 0.8rem 6rem;
 }
 
 .nav-bar, .mobile-menu {
@@ -96,6 +97,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 8px 20px;
+    margin-top: 10px;
 }
 
 .login-button button {
@@ -103,7 +105,6 @@ header {
     background-color: var(--cor-botao-entrar);
     padding: 8px 20px;
     border-radius: 5px;
-    border: 2px solid var(--cor-texto-menu);
     align-items: center;
 }
 
@@ -175,6 +176,7 @@ header {
 /* Estilo slide */
 
 section.slider {
+    background-color: var(--cor-menu);
     margin: 0 auto;
     width: 100%;
     height: auto;
@@ -186,7 +188,7 @@ section.slider {
     width: 400%;
     height: auto;
     display: flex;
-    padding-top: 115px;
+    padding-top: 95px;
 }
 
 .slider-content input,
@@ -251,7 +253,7 @@ section.slider {
     margin-left: -50%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .img-desktop {
         display: none;
     }
@@ -262,51 +264,388 @@ section.slider {
 
     .nav-auto,
     .nav-manual {
-        margin-top: 130%;
+        margin-top: 117%;
     }
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--cor-menu);
+    height: 900hv;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo do header */
+
+header {
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+header.rolagem {
+    background-color: var(--cor-menu);
+    padding: 20px 4%;
+    z-index: 3;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 35px;
+}
+
+header .menu-desktop nav ul {
+    list-style: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.10);
+    transform: 0.5s;
+}
+
+header .btn-contato button {
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header .btn-contato button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilo do hero */
+
+section.hero-site {
+    height: 100vh;
+    background-image: url(../images/copos-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.hero-site .txt-hero h1 span {
+    display: block;
+    font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.hero-site .txt-hero p span {
+    display: block;
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.hero-site button:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 /* Estilo sobre */
 .sobre {
     padding: 2rem;
-    background-color: #f9f9f9; /* Cor de fundo suave */
-    color: #333; /* Cor do texto */
+    background-color: var(--cor-menu);
+    color: #333;
 }
 
 .sobre h1 {
-    margin-top: 80px;
+    margin-top: 45px; 
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 45px;
     text-align: center;
 }
 
 .sobre p {
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-bottom: 6rem;
-    text-align: justify; /* Justifica o texto para melhor leitura */
+    margin-bottom: 4rem;
+    text-align: justify; 
 }
 
-@media (max-width: 768px) {
+.conteinerSobre{
+    margin-top: 20px;
+    border-radius: 2.5%;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+
+@media (max-width: 600px) {
     .sobre {
-        padding: 1rem; /* Menos padding em telas menores */
+        padding: 1rem; 
     }
 
     .sobre h1 {
-        font-size: 1.5rem; /* Reduz o tamanho do título */
+        font-size: 1.5rem; 
     }
 
     .sobre p {
-        font-size: 1rem; /* Reduz o tamanho do texto */
+        font-size: 1rem; 
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .sobre h1 {
-        font-size: 1.3rem; /* Reduz ainda mais em telas muito pequenas */
+        font-size: 1.3rem; 
     }
 
     .sobre p {
-        font-size: 0.9rem; /* Reduz o texto em telas pequenas */
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Estilo das vantagens */
+
+section.vantagens {
+    padding: 80px 0;
+    background-color: var(--cor-cinza);
+}
+
+.vantagens .itens-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.vantagens .itens-conteiner .img-itens img {
+    max-width: 420px;
+    border-radius: 30px;
+}
+
+.vantagens .itens-conteiner .txt-itens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.vantagens .itens-conteiner .txt-itens p {
+    color: #fff;
+}
+
+.itens-conteiner .txt-itens h3 span {
+    font-weight: 300;
+}
+
+/* Estilo da sessão mais */
+
+section.mais {
+    padding: 80px 0;
+}
+
+.txt-mais,
+.instru-mais {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.mais .txt-mais{
+    position: sticky;
+    top: 50%
+}
+
+.mais .txt-mais h3 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.mais .txt-mais h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.instru-mais .instru-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
+.instru-mais .instru-box img{
+    max-width: 50px;
+}
+
+.instru-mais .instru-box h4{
+    font-size: 1.5em;
+    font-size: 800;
+    margin-bottom: 10px;
+    color: #fff;
+
+}
+
+.instru-mais .instru-box h4 span{
+    font-weight: 300;
+    
+}
+
+.instru-mais .instru-box p{
+    line-height: 20px;
+    color: #fff;
+}
+
+/* Estilo contato */
+
+.contato {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt-contato,
+.icons-contato {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3 {
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.contato .txt-contato h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons-contato a {
+    text-decoration: none;
+}
+
+.contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    background-color: transparent;
+    background-color: var(--cor-card);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contato .icons-contato button i {
+    font-size: 20px;
+}
+
+.contato .icons-contato button:hover {
+    background-color: var(--cor-menu);
+}
+
+.contato .icons-contato button:hover i,
+.contato .icons-contato button:hover p {
+    color: var(--cor-botao);
+}
+
+.txtContato{
+font-size: 12px;
+color: var(--cor-box-shadow);
+margin-top: 50px;
+text-align: center;
+}
+
+@media (max-width: 600px) {
+    .txt-contato,
+    .icons-contato {
+        width: 100%;
+        margin-right: 0;
+        display: block;
+    }
+
+    .contato .txt-contato h3 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .contato .icons-contato button {
+        padding: 0 30px;
+        width: 80%;
+        height: 50px;
+        margin: 0 auto 20px auto;
+    }
+
+    .contato .icons-contato button:hover {
+        background-color: #A9D6E5; /* Cor de hover fixa para teste */
+    }
+    
+    .contato .icons-contato button:hover i,
+    .contato .icons-contato button:hover p {
+        color: var(--cor-botao);
     }
 }

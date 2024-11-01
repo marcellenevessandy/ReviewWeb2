@@ -1,0 +1,253 @@
+
+/* o Aplique uma paleta de cores suave e clean, ideal para consultórios:
+ Azul claro (#A9D6E5), branco (#FFFFFF), cinza claro
+(#F3F4F6), e verde suave (#90BE6D).
+
+o O estilo deve transmitir limpeza, cuidado e modernidade. */
+/* 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+/* Estilo menu  */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--cor-menu);
+    box-shadow: 0px 3px 10px var(--cor-box-shadow);
+}
+
+.nav-bar {
+    background-color: var(--cor-menu);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 6rem;
+}
+
+.nav-bar, .mobile-menu {
+    width: 100%; /
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+}
+
+.logo img {
+    width: 64px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: var(--cor-texto-menu);
+    font-weight: 500;
+}
+
+.login-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    margin-top: 10px;
+}
+
+.login-button button {
+    border: none;
+    background-color: var(--cor-botao-entrar);
+    padding: 8px 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: var(--cor-texto-menu);
+    font-weight: 600;
+    padding: 8px 20px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        align-self: center;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+/* Estilo slide */
+
+section.slider {
+    background-color: var(--cor-menu);
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+    padding-top: 95px;
+}
+
+.slider-content input,
+.img-mobile {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual,
+.nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 34.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn,
+.nav-auto div {
+    border: 1px solid var(--cor-botao);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: var(--cor-botao);
+}
+
+#radio1:checked~.nav-auto .auto-btn1,
+#radio2:checked~.nav-auto .auto-btn2,
+#radio3:checked~.nav-auto .auto-btn3 {
+    background-color: var(--cor-botao);
+}
+
+#radio1:checked~.primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+    margin-left: -50%;
+}
+
+@media screen and (max-width: 600px) {
+    .img-desktop {
+        display: none;
+    }
+
+    .img-mobile {
+        display: block;
+    }
+
+    .nav-auto,
+    .nav-manual {
+        margin-top: 117%;
+    }
+} */
