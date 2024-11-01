@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="./assects/img/cabide-icon.png" type="image/x-icon">
+    <title>Sorriso Perfeito</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./index.html"><img src="./assets/img/logotipoDenteBranco.png" alt="logo Sorriso Perfeito"></a>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#galeriaFotos" class="nav-link">Galeria de Fotos</a></li>
+                    <li class="nav-item"><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <a href="#contato"><button>Contato</button></a>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./assets/img/menu.png" alt="logo menu"></button>
+            </div>
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#galeriaFotos" class="nav-link">Galeria de Fotos</a></li>
+                <li class="nav-item"><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <a href="#contato"><button>Contato</button></a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+ <section class="hero-site">
+
+            <div class="interface">
+
+                <div class="txt-hero">
+                    <h1>Seu sorriso<span>é nossa prioridade</span></h1>
+                    <p>Na <strong>Sorriso Perfeito</strong>, você recebe o melhor cuidado dental, <br> vive momentos de
+                        alegria e se sente confiante ao sorrir!</p>
+
+                    <a href="#contato">
+                        <button>CONTATO</button>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="slider" id="slide">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="./assets/img/card.d1.png" alt="slide 1">
+                    <img class="img-mobile" src="./assets/img/card.m1.png" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="./assets/img/card.d2.png" alt="slide 3">
+                    <img class="img-mobile" src="./assets/img/card.m2.png" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="./assets/img/card.d3.png" alt="slide 3">
+                    <img class="img-mobile" src="./assets/img/card.m3.png" alt="slide 3">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="cards">
+            <div class="card">
+                <img src="./assects/img/card1.png" alt="Produto 1">
+                <h1>Blazer Elegance</h1>
+                <span>R$ 119,99</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="./assects/img/card2.png" alt="Produto 2">
+                <h1>Blazer Mood</h1>
+                <span>R$ 159,99</span>
+                <button>Comprar</button>
+            </div>
+
+            <div class="card">
+                <img src="./assects/img/card3.png" alt="Produto 3">
+                <h1>Blazer Elite</h1>
+                <span>R$ 109,99</span>
+                <button>Comprar</button>
+            </div>
+        </section>
+
+        <section id="novidades" class="container">
+            <div class="container-formulario">
+                <h1>Assine para Receber Novidades</h1>
+                <div class="formulario">
+                    <form action="https://formsubmit.co/marcellesandy3@gmail.com" method="POST">
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        <button type="submit">Assinar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contagem" class="container-contagem">
+            <div class="contagem">
+                <h1>Contagem Regressiva para a Inauguração da Loja</h1>
+                <div id="countdown"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contato">
+        <footer class="footer">
+            <div class="redes-sociais">
+                <a href="#" target="_blank">
+                    <img src="./assects/img/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assects/img/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assects/img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./assects/img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+
+            <div>
+                <p>&copy; Todos os direitos reservados. Desenvolvido por Marcelle Sandy</p>
+            </div>
+        </footer>
+
+    </footer>
+
+    <script src="assects/js/script.js"></script>
+</body>
+
+</html>
