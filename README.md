@@ -1,5 +1,5 @@
 # Projeto Sorriso Perfeito - Landing Page
-![Banner do Projeto](sorrisoPerfeito/assets/img/hero.png)
+![Banner do Projeto](/assets/img/hero.png)
 
 
 ## Sobre o Projeto
