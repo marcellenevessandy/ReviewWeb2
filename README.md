@@ -40,8 +40,7 @@ As tecnologias e ferramentas utilizadas neste projeto são:
 ````
 # Como Executar o Projeto
 1. Clone o repositório em sua máquina local:
-git clone [https://github.com/seu_usuario/projeto-sorriso-
-perfeito.git](https://github.com/marcellenevessandy/ReviewWeb2)
+git clone [https://github.com/marcellenevessandy/ReviewWeb2.git](https://github.com/marcellenevessandy/ReviewWeb2)
 2. Navegue até o diretório do projeto:
 cd projeto-sorriso-perfeito
 3. Abra o arquivo index.html em seu navegador.
